@@ -39,5 +39,5 @@
     },
     "default_title": "Add to Speed Dial"
   },
-  "web_accessible_resources": ["icons/icon128.png"],
+  "web_accessible_resources": ["icons/icon128.png"]
 }
