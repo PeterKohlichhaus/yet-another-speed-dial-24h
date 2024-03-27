@@ -130,11 +130,6 @@ const debounce = (func, delay= 500, immediate=false) => {
 // detect clock settings
 hourCycle = Intl.DateTimeFormat(locale, {hour: 'numeric'}).resolvedOptions().hourCycle;
 
-function displayClockOLD() {
-    clock.textContent = new Date().toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', hourCycle: hourCycle});
-    setTimeout(displayClock, 10000);
-}
-
 function displayClock() {
     clock.textContent = new Date().toLocaleString(navigator.language, {hour: 'numeric', minute: 'numeric', hourCycle: 'h23'});
     setTimeout(displayClock, 10000);
